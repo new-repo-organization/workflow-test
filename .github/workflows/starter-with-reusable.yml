@@ -1,0 +1,6 @@
+name: Using Reusable Workflow
+on: workflow_dispatch
+
+jobs: 
+  workflow:
+    uses: new-repo-organization/reusable-workflows/.github/workflows/test-reusable-workflows.yml@main
