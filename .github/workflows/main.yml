@@ -1,0 +1,17 @@
+name: Test
+
+on:
+  pull_request:
+    branches: [ $default-branch ]
+    types:
+      - opened
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: help
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Run
+        run: echo "works?"
